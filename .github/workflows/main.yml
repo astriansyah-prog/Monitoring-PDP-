@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monitoring PDP DIV SAK</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<aside class="sidebar" id="sidebar">
+  <div class="brand">
+    <img src="assets/pln-logo.png" alt="PLN">
+    <div class="brand-text">
+      <div class="t1">PLN — DIV SAK</div>
+      <div class="t2">Monitoring PDP</div>
+    </div>
+  </div>
+
+  <div class="navgroup-label">Ringkasan</div>
+  <div class="navitem active" data-view="beranda"><span class="ic">🏠</span> Beranda</div>
+  <div class="navitem" data-view="performance"><span class="ic">📊</span> Performance Monitoring</div>
+  <div class="navitem" data-view="ews"><span class="ic">🚨</span> EWS Monitoring</div>
+
+  <div class="navgroup-label">Detail Proyek PDP</div>
+  <div class="navitem" data-view="kategori"><span class="ic">🗂️</span> Kategori D1–D4</div>
+  <div class="navitem" data-view="cluster"><span class="ic">🧩</span> Cluster Proyek 1–9</div>
+
+  <div class="navgroup-label">Rekonsiliasi Data</div>
+  <div class="navitem" data-view="rekon"><span class="ic">🏦</span> PMO vs SAP (DIV AKT)</div>
+
+  <div class="sidebar-foot">
+    Data: Google Sheet "data pdp sampai juni" (live)<br>
+    <span id="sourceBadge" class="source-badge">Memuat…</span>
+  </div>
+</aside>
+
+<div class="main">
+  <div class="topbar">
+    <div style="display:flex;align-items:center;gap:12px;">
+      <button class="menu-btn" id="menuBtn">☰</button>
+      <div>
+        <h1 id="pageTitle">Beranda — Infografis Sebaran Proyek PDP</h1>
+        <div class="sub">Monitoring PDP sampai Juni 2026 · DIV SAK — data DIV PMO &amp; DIV AKT (SAP)</div>
+      </div>
+    </div>
+    <div class="period-pill"><span class="dot"></span> Periode: Juni 2026</div>
+  </div>
+
+  <div class="content" id="content">
+    <!-- views injected by JS -->
+  </div>
+  <footer class="foot">Monitoring PDP sampai Juni 2026 · DIV SAK — PT PLN (Persero) &nbsp;|&nbsp; Dashboard ini disusun otomatis dari data DIV PMO &amp; DIV AKT (SAP)</footer>
+</div>
+
+<div class="modal-bg" id="modalBg">
+  <div class="modal" id="modalBody"></div>
+</div>
+
+<script src="js/vendor/chart.umd.js"></script>
+<script src="js/data-source.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
